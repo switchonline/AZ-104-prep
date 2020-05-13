@@ -10,6 +10,7 @@
         "networkInterfaces_backendserver889_name": "backendsrv889",
         "networkInterfaces_backendserver889_name_2": "backendsrv8892",
         "publicIPAddresses_backendSERVER_ip_name": "backendSERVER-ip",
+        "publicIPAddresses_backendSERVER2_ip_name": "backendSERVER2-ip",
         "networkInterfaces_frontendserver859_name": "frontendserver859",
         "publicIPAddresses_frontendSERVER_ip_name": "frontendSERVER-ip",
         "networkSecurityGroups_backendSERVER_nsg_name": "backendSERVER-nsg",
@@ -156,6 +157,26 @@
             },
             "properties": {
                 "ipAddress": "13.84.179.180",
+                "publicIPAddressVersion": "IPv4",
+                "publicIPAllocationMethod": "Dynamic",
+                "idleTimeoutInMinutes": 4,
+                "ipTags": []
+            }
+        },
+        {
+            "type": "Microsoft.Network/publicIPAddresses",
+            "apiVersion": "2019-07-01",
+            "name": "[variables('publicIPAddresses_backendSERVER2_ip_name')]",
+            "location": "[resourceGroup().location]",
+            "tags": {
+                "BeardSite": "[resourceGroup().location]"
+            },
+            "sku": {
+                "name": "Basic",
+                "tier": "Regional"
+            },
+            "properties": {
+                "ipAddress": "13.84.179.182",
                 "publicIPAddressVersion": "IPv4",
                 "publicIPAllocationMethod": "Dynamic",
                 "idleTimeoutInMinutes": 4,
