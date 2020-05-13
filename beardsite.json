@@ -433,7 +433,7 @@
         {
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "2019-07-01",
-            "name": "[variables('networkInterfaces_backendserver889_name')]_2",
+            "name": "[variables('networkInterfaces_backendserver889_name_2')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddresses_backendSERVER_ip_name'))]",
@@ -448,7 +448,7 @@
                     {
                         "name": "ipconfig1",
                         "properties": {
-                            "privateIPAddress": "10.0.4.4",
+                            "privateIPAddress": "10.0.4.6",
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddresses_backendSERVER_ip_name'))]"
