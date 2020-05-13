@@ -42,7 +42,7 @@
     "variables": {
         "Backend2": "backend2",
         "backend2nic": "backend2nic",
-        "backend2publicip": ""
+        "backend2publicip": "backend2publicip"
     },
     "resources": [
         {
